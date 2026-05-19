@@ -12,14 +12,14 @@ Link dataset: [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/win
 
 ## 2. Cấu trúc thư mục
 
-Dự án được tổ chức theo cấu trúc module như sau, nhằm tối ưu hóa việc tái sử dụng mã nguồn. Thư mục dữ liệu `data/` được cấu hình bỏ qua trong `.gitignore` do giới hạn dung lượng:
+Dự án được tổ chức theo cấu trúc module như sau, nhằm tối ưu hóa việc tái sử dụng mã nguồn.
 
 ```text
 DS102_LAB4/
 ├── data/                      # (Được bỏ qua trên Git)
 │   ├── processed/             # Dữ liệu sau khi làm sạch và chuẩn hóa
 │   └── raw/
-│       └── wine+quality/      # Chứa dataset gốc (winequality-red.csv, white.csv)
+│       └── wine+quality/      # Chứa dataset gốc (winequality-red.csv, winequality-white.csv)
 ├── src/                       # Các module xử lý logic cốt lõi
 │   ├── data_loader.py         # Module đọc dữ liệu (dùng pathlib & pandas)
 │   ├── data_preprocessing.py  # Tiền xử lý: Gộp data, Train/Test Split & Z-score Scaling
